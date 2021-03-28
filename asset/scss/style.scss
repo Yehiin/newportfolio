@@ -402,16 +402,16 @@ section {
 		padding-left: 65px;
 		font-size: 50px;
 
-		small:first-of-type:empty {
-			display: block;
-			position: absolute;
-			top: -36px;
-			left: 25px;
-			width: 40px;
-			height: 40px;
-			background: url('../img/section03_tit_mark.png') center center no-repeat;
-			background-size: contain;
-		}
+		// small:first-of-type:empty {
+		// 	display: block;
+		// 	position: absolute;
+		// 	top: -36px;
+		// 	left: 25px;
+		// 	width: 40px;
+		// 	height: 40px;
+		// 	background: url('../img/section03_tit_mark.png') center center no-repeat;
+		// 	background-size: contain;
+		// }
 		small:last-of-type:empty {
 			content: '';
 			display: block;
@@ -428,8 +428,6 @@ section {
 		}
 	}
 	
-
-
 	.layout_center {
 		position: relative;
 		width: auto;
@@ -470,8 +468,6 @@ section {
 		}
 	}
 
-	
-
 	.bg_container {
 		position: absolute;
 		top: 0;
@@ -504,7 +500,9 @@ section {
 				content: '';
 				display: block;
 				width: 100%;
-				border-top: 2vw solid #009cff;
+				height: 2vw;
+				background-color: #009cff;
+				// border-top: 2vw solid #009cff;
 				transform: rotate(-45deg);
 			}
 		}
@@ -514,7 +512,7 @@ section {
 			left: -46%;
 			top: -15%;
 			&::before {
-				border-width: 8px;
+				height: 8px;
 			}
 		}
 		.line_2 {
@@ -522,7 +520,8 @@ section {
 			top: 12%;
 			left: -100%;
 			&::before {
-				border-width: 150px;
+				height: 150px;
+				background: linear-gradient(to right, red, #9198e5);
 			}
 		}
 		.line_3 {
@@ -531,20 +530,20 @@ section {
 			bottom: 430px;
 			width: 800px;
 			&::before {
-				border-width: 10px;
+				height: 10px;
 			}
 		}
 	
-		.box {
-			position: absolute;
-			bottom: -50px;
-			right: -70px;
-			display: block;
-			width: 118px;
-			height: 118px;
-			background: url('../img/section03_tit_mark_big.png') center center no-repeat;
-			background-size: contain;
-		}
+		// .box {
+		// 	position: absolute;
+		// 	bottom: -50px;
+		// 	right: -70px;
+		// 	display: block;
+		// 	width: 118px;
+		// 	height: 118px;
+		// 	background: url('../img/section03_tit_mark_big.png') center center no-repeat;
+		// 	background-size: contain;
+		// }
 	}
 } //.section03
 
@@ -739,44 +738,46 @@ section {
 	justify-content: center;
 	align-items: center;
 	height: 50vw;
-	max-height: 440px;
+	max-height: 600px;
 
 	h2 {
-		font-size: 45px;
+		font-size: 60px;
 		font-weight: 700;
 		letter-spacing: 0.3em;
 		margin-right: -1em;
 	}
 
 	.bg_container {
-
 		[class*="line_"] {
 			position: absolute;
 			z-index: -1;
 			width: 100%;
-		}
-		[class*="line_"]::before {
-			content: '';
-			display: block;
-			border-top: 2px solid #009cff;
-			transform: rotate(-45deg);
+
+			&::before {
+				content: '';
+				display: block;
+				height: 2px;
+				background-color: #009cff;
+				// border-top: 2px solid #009cff;
+				transform: rotate(-45deg);
+			}
 		}
 		.line_1 {
-			top: -50%;
+			top: -23%;
 			left: 10%;
 			max-width: 1000px;
-		}
-		.line_1::before {
-			border-width: 5px;
+			&::before {
+				height: 5px;
+			}
 		}
 		.line_2 {
-			top: -50%;
+			top: -37%;
 			right: auto;
 			left: 60%;
 			max-width: 1000px;
-		}
-		.line_2::before {
-			border-width: 120px;
+			&::before {
+				height: 120px;
+			}
 		}
 		[class*="box_"] {
 			position: absolute;

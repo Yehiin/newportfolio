@@ -54,16 +54,16 @@
 		scrollTrigger: {
 			// markers: true,
 			trigger: '.section03',
-			start: 'top 60%',
+			start: 'top 80%',
 			toggleActions: 'restart none none reverse',
 		}
 	});
 	section03_TL
 		.from('.section03 h2', {duration: 2, opacity: 0})
 		.from('.section03 .layout_center > p', {stagger: 0.2, duration: 0.5, opacity: 0, y:10}, 0.5)
-		.from('.section03 h2 > small:first-of-type:empty', {duration: 0.5, opacity: 0, y:10})
+		// .from('.section03 h2 > small:first-of-type:empty', {duration: 0.5, opacity: 0, y:10})
 		.from('.section03 h2 > small:last-of-type:empty', {duration: 0.5, scale: 0}, '-=0.5')
-		.from('.section03 .bg_container .box', {duration: 0.5, opacity: 0, y:10})
+		// .from('.section03 .bg_container .box', {duration: 0.5, opacity: 0, y:10})
 		.from('.section03 .bg_container .line_1', {duration: 1, scale: 0 , x: 1000, y: -1000}, 0.5)
 		.from('.section03 .bg_container .line_2', {duration: 1, scale: 0 , x: -2000, y: 2000}, 0.5)
 		.from('.section03 .bg_container .line_3', {duration: 1, scale: 0 , x: 1000, y: -1000}, 0.5)

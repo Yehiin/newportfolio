@@ -387,17 +387,6 @@ section {
   font-size: 50px;
 }
 
-.section03 h2 small:first-of-type:empty {
-  display: block;
-  position: absolute;
-  top: -36px;
-  left: 25px;
-  width: 40px;
-  height: 40px;
-  background: url("../img/section03_tit_mark.png") center center no-repeat;
-  background-size: contain;
-}
-
 .section03 h2 small:last-of-type:empty {
   content: '';
   display: block;
@@ -492,7 +481,8 @@ section {
   content: '';
   display: block;
   width: 100%;
-  border-top: 2vw solid #009cff;
+  height: 2vw;
+  background-color: #009cff;
   transform: rotate(-45deg);
 }
 
@@ -503,7 +493,7 @@ section {
 }
 
 .section03 .bg_container .line_1::before {
-  border-width: 8px;
+  height: 8px;
 }
 
 .section03 .bg_container .line_2 {
@@ -513,7 +503,8 @@ section {
 }
 
 .section03 .bg_container .line_2::before {
-  border-width: 150px;
+  height: 150px;
+  background: linear-gradient(to right, red, #9198e5);
 }
 
 .section03 .bg_container .line_3 {
@@ -524,18 +515,7 @@ section {
 }
 
 .section03 .bg_container .line_3::before {
-  border-width: 10px;
-}
-
-.section03 .bg_container .box {
-  position: absolute;
-  bottom: -50px;
-  right: -70px;
-  display: block;
-  width: 118px;
-  height: 118px;
-  background: url("../img/section03_tit_mark_big.png") center center no-repeat;
-  background-size: contain;
+  height: 10px;
 }
 
 /* Section04 */
@@ -728,11 +708,11 @@ section {
   justify-content: center;
   align-items: center;
   height: 50vw;
-  max-height: 440px;
+  max-height: 600px;
 }
 
 .last_section h2 {
-  font-size: 45px;
+  font-size: 60px;
   font-weight: 700;
   letter-spacing: 0.3em;
   margin-right: -1em;
@@ -747,29 +727,30 @@ section {
 .last_section .bg_container [class*="line_"]::before {
   content: '';
   display: block;
-  border-top: 2px solid #009cff;
+  height: 2px;
+  background-color: #009cff;
   transform: rotate(-45deg);
 }
 
 .last_section .bg_container .line_1 {
-  top: -50%;
+  top: -23%;
   left: 10%;
   max-width: 1000px;
 }
 
 .last_section .bg_container .line_1::before {
-  border-width: 5px;
+  height: 5px;
 }
 
 .last_section .bg_container .line_2 {
-  top: -50%;
+  top: -37%;
   right: auto;
   left: 60%;
   max-width: 1000px;
 }
 
 .last_section .bg_container .line_2::before {
-  border-width: 120px;
+  height: 120px;
 }
 
 .last_section .bg_container [class*="box_"] {
