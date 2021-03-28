@@ -539,29 +539,12 @@ section {
 
 /* Section04 */
 .list_project li {
-  padding: 100px 0;
+  padding: 150px 0;
   box-sizing: border-box;
   color: #fff;
 }
 
-.list_project .layout_center {
-  width: 84%;
-  margin: 0 auto;
-}
-
-.list_project .layout_center {
-  position: relative;
-  width: 90%;
-  max-width: 1100px;
-  min-height: 400px;
-}
-
-.list_project li {
-  padding: 150px 0;
-}
-
-.list_project li:nth-child(1) .contribution span,
-.list_project li:nth-child(1) {
+.list_project li:nth-child(1) .contribution span, .list_project li:nth-child(1) {
   background-color: #1b1d2d;
 }
 
@@ -574,8 +557,7 @@ section {
   color: #8194c2;
 }
 
-.list_project li:nth-child(2) .contribution span,
-.list_project li:nth-child(2) {
+.list_project li:nth-child(2) .contribution span, .list_project li:nth-child(2) {
   background-color: #232323;
 }
 
@@ -588,8 +570,7 @@ section {
   color: #fc5201;
 }
 
-.list_project li:nth-child(3) .contribution span,
-.list_project li:nth-child(3) {
+.list_project li:nth-child(3) .contribution span, .list_project li:nth-child(3) {
   background-color: #472f18;
 }
 
@@ -602,19 +583,20 @@ section {
   color: #fef2b4;
 }
 
+.list_project .layout_center {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  min-height: 400px;
+}
+
 .list_project .box_title {
   margin-bottom: 50px;
 }
 
 .project_tit_box {
   position: relative;
-  display: flex;
-  /* justify-content: left;
-	align-items: center; */
-  margin-bottom: 10vw;
-}
-
-.project_tit_box {
   display: inline-flex;
   flex-flow: column-reverse;
   width: 35%;
@@ -643,15 +625,11 @@ section {
 
 .project_tit_box a {
   display: block;
-  font-size: 7.4vw;
+  font-size: 30px;
 }
 
 .project_tit_box a + span {
-  font-size: 3.24vw;
-}
-
-.project_tit_box .contribution + div {
-  margin-left: 3vw;
+  font-size: 12px;
 }
 
 .project_tit_box .contribution {
@@ -660,20 +638,12 @@ section {
   margin-top: 20px;
 }
 
-.project_tit_box .contribution span {
-  font-size: 20px;
-}
-
-.project_tit_box a {
-  font-size: 30px;
-}
-
-.project_tit_box a + span {
-  font-size: 12px;
-}
-
 .project_tit_box .contribution + div {
   margin-left: 0;
+}
+
+.project_tit_box .contribution span {
+  font-size: 20px;
 }
 
 .list_project .prview {
