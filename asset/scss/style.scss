@@ -62,8 +62,9 @@ section {
 		& + small {
 			display: block;
 			margin-top: 0;
-			font-size: 28px;
+			font-size: 22px;
 			font-weight: 100;
+			letter-spacing: 0.2em;
 			color: #fff;
 			/* opacity: 0.9; */
 			opacity: 0;
@@ -482,7 +483,7 @@ section {
 		height: 100%;
 		
 		&::after {
-			content: 'A PERFECTIONIST PUBLISHER';
+			content: 'A SENSUOUS DESIGNER';
 			position: absolute;
 			top: 220px;
 			right: -10px;
