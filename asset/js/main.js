@@ -127,7 +127,7 @@
 	lastSection_TL
 		.from('.last_section h2', {duration: 1, scaleY: 0}, 0.7)
 		.from('.last_section .bg_container .line_1, .last_section .bg_container .line_2', {stagger:0.2, duration: 1, scale: 0 , x: 1000, y: -1000}, 0)
-		.from('.last_section .bg_container .box_1, .last_section .bg_container .box_2', {stagger:0.2, duration: 1.5, opacity:0, y: 30}, 0.5)
+		// .from('.last_section .bg_container .box_1, .last_section .bg_container .box_2', {stagger:0.2, duration: 1.5, opacity:0, y: 30}, 0.5)
 		;
 
 })(window, window.document);
