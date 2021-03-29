@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* Sub Common Style */
+.center_container {
+  text-align: center;
+}
+
+.center_container .img_container {
+  position: relative;
+  display: inline-block;
+}
+
+/* 1365기부포털 */
+.nanumkorea .img_container .btn_link {
+  position: absolute;
+  top: 2083px;
+  left: 1272px;
+  display: block;
+  width: 310px;
+  height: 64px;
+}
+/*# sourceMappingURL=sub.css.map */
