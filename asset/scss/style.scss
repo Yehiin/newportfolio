@@ -438,17 +438,13 @@ section {
 			&:nth-of-type(3) {
 				position: absolute;
 				top: 360px;
-				left: 72%;
+				left: 69%;
 				white-space: nowrap;
 			}
 			&:nth-of-type(4) {
 				margin: 0;
 				font-size: 24px;
 				font-weight: 700;
-
-				br:nth-of-type(1), br:nth-of-type(3) {
-					display: none;
-				}
 			}
 			em {
 				font-weight: 800;
