@@ -398,7 +398,6 @@ section {
 .section03 .layout_center > p {
   position: relative;
   left: 40px;
-  margin-top: 1em;
   font-size: 18px;
   line-height: 1.6;
 }
@@ -420,7 +419,7 @@ section {
 }
 
 .section03 .layout_center > p:nth-of-type(4) {
-  margin: 0;
+  margin-top: 2em;
   font-size: 24px;
   font-weight: 700;
 }
