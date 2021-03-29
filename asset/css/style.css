@@ -350,10 +350,7 @@ section {
   justify-content: center;
   align-items: center;
   box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.3) inset, 7px 7px 5px rgba(0, 0, 0, 0.6);
-}
-
-.skills dd span img {
-  height: 24px;
+  vertical-align: top;
 }
 
 /* Section03 */
@@ -554,9 +551,12 @@ section {
   background: linear-gradient(to bottom, #7026f8, #3e1cb4);
 }
 
-.list_project li:nth-child(3) .box_title span::after,
+.list_project li:nth-child(3) .box_title span::after {
+  color: #5929fe;
+}
+
 .list_project li:nth-child(3) .project_tit_box a + span {
-  color: #fef2b4;
+  color: #743eda;
 }
 
 .list_project li .box_title span::after {
@@ -665,13 +665,12 @@ section {
 .list_project .preview_group {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 74%;
+  right: -70px;
+  width: 820px;
 }
 
 .preview_group a {
   float: left;
-  width: 50%;
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
 }
@@ -686,15 +685,11 @@ section {
 }
 
 .preview_group a:nth-of-type(even) {
-  transform: translateX(20px);
+  margin-left: 20px;
 }
 
 .preview_group a:nth-of-type(n+3) {
-  transform: translateY(20px);
-}
-
-.preview_group a:nth-of-type(even):nth-of-type(n+3) {
-  transform: translateY(20px) translateX(20px);
+  margin-top: 20px;
 }
 
 /* Last Section */
