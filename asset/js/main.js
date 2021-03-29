@@ -40,6 +40,7 @@
 	});
 	section02_02_TL
 		.from('.section02 .box_title', {duration: 1, opacity: 0, y: 20})
+		.from('.section02 .box_title + p + span', {duration: 0.5, opacity: 0, y: 20}, 0.5)
 		.from('.section02 .box_title + p', {duration: 0.5, opacity: 0, y: 20}, 0.5)
 		.from('.section02 .box_title + p span', {duration: 0.5, x: -20}, 0.5)
 		.from('.section02 .box_title + p small', {duration: 0.5, x: 20}, 0.5)

@@ -26,8 +26,8 @@ section {
 	width: 100%;
 	height: 100vh;
 	max-height: 1024px;
-	background-color: #191e3b;
-	color: #fff;
+	// background-color: #191e3b;
+	color: #451200;
 	
 	.layout_center {
 		height: 100vh;
@@ -45,7 +45,7 @@ section {
 			font-size: 26px;
 			font-weight: 100;
 			letter-spacing: 0.6em;
-			color: #8194c2;
+			// color: #451200;
 			line-height: 1.6;
 			opacity: 0;
 		}
@@ -56,78 +56,51 @@ section {
 			font-size: 80px;
 			font-weight: 100;
 			letter-spacing: 0.1em;
-			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+			text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 			opacity: 0;
 		}
 		& + small {
 			display: block;
 			margin-top: 0;
 			font-size: 22px;
-			font-weight: 100;
+			font-weight: 300;
 			letter-spacing: 0.2em;
 			color: #fff;
-			/* opacity: 0.9; */
+			text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 			opacity: 0;
 		}
 		
 		// br {
 		// 	display: none;
 		// }
-	
 	}
 
 	.img_conatainer {
 		position: absolute;
-		top: 45%;
-		left: 50%;
-		width: 50%;
-		opacity: 0;
-	}
-	.img_conatainer img {
-		width: 100%
-	}
-	/* .small_img {
-		display: none !important;
-	}
-	.big_img {
-		display: none !important;
-	} */
-	.img_conatainer {
 		top: 0;
 		left: 40%;
 		bottom: 0;
-	}
-	.img_conatainer img {
-		width: auto;
-		height: 100%;
+		width: 60vw;
+		background: url('../img/pc_section01_img01.jpg') left center no-repeat;
+		background-size: cover;
+
+		opacity: 0;
 	}
 	
 	.right_msg {
 		position: absolute;
-		top: 70vw;
+		top: 70%;
 		right: 5vw;
-		font-size: 2.59vw;
+		font-size: 13px;
 		font-weight: 100;
 		letter-spacing: 0.4em;
-		color: #8194c2;
+		color: #fff;
 		transform: rotate(90deg);
 		transform-origin: top right;
 	
 		opacity: 0;
 	}
-	.right_msg {
-		top: 70%;
-		font-size: 13px;
-	}
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -194,26 +167,27 @@ section {
 		display: block;
 		height: 51.94vw;
 		width: 1px;
-		background-color: #009cff;
-	}
-	& > span:empty::before {
-		content: '';
-		position: absolute;
-		bottom: -16px;
-		transform: translateX(-46%);
-		/* left: -1.4vw; */
-		display: block;
-		width: 16px;
-		height: 16px;
-		border-radius: 50%;
-		border: 1px solid #009cff;
-		box-sizing: border-box;
+		background-color: #c94945;
+
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -16px;
+			transform: translateX(-46%);
+			/* left: -1.4vw; */
+			display: block;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			border: 1px solid #c94945;
+			box-sizing: border-box;
+		}
 	}
 	& > em {
 		line-height: 3;
 		font-size: 16px;
 		font-weight: 900;
-		color: #fff;
+		color: #451200;
 		letter-spacing: 0.1em;
 	}
 	p {
@@ -221,10 +195,10 @@ section {
 		font-size: 20px;
 		font-weight: 100;
 		letter-spacing: 0.6em;
-		color: #868ea3;
+		color: #451200;
 
 		span {
-			color: #fff;
+			font-weight: 400;
 		}
 	}
 
@@ -245,19 +219,19 @@ section {
 	box-sizing: border-box;
 }
 
-
-
 .box_title {
+	$styleColor: #451100;
+
 	position: relative;
 	display: block;
 	width: 203px;
 	padding: 16px 0;
-	border-left: 3px solid #fff;
-	border-bottom: 3px solid #fff;
+	border-left: 3px solid $styleColor;
+	border-bottom: 3px solid $styleColor;
 	font-size: 20px; 
 	font-weight: 900;
 	letter-spacing: 0.1em;
-	color: #fff;
+	color: $styleColor;
 	text-align: center;
 	box-sizing: border-box;
 	
@@ -271,14 +245,14 @@ section {
 		left: -1px;
 		height: 0;
 		width: 46px;
-		border-top: 3px solid #fff;
+		border-top: 3px solid $styleColor;
 	}
 	&::after {
 		bottom: -1px;
 		right: 0;
 		height: 23px;
 		width: 0;
-		border-right: 3px solid #fff;
+		border-right: 3px solid $styleColor;
 	}
 
 	span::after {
@@ -287,15 +261,16 @@ section {
 		top: -0.5em;
 		right: 0.1em;
 		font-size: 30px;
-		color: #009cff;
+		color: #d16966;
 	}
-}
-.career_container .box_title {
-	margin-bottom: 2em;
 }
 
 
 .career_container {
+	.box_title {
+		margin-bottom: 2em;
+	}
+	
 	& > p {
 		position: absolute;
 		top: 45%;
@@ -305,44 +280,62 @@ section {
 		/* font-weight: 500; */
 		letter-spacing: 0.4em;
 		line-height: 2;
-		color: #fff;
+		color: #451200;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -0.5em;
+			left: 105px;
+			display: block;
+			width: 275px;
+			border-bottom: 2px solid #ffefe8;
+		}
+
+		span {
+			display: block;
+			color: #451200;
+			font-size: 13px;
+			// font-weight: 100;
+		}
+		small {
+			display: inline-block;
+			margin: 0;
+			margin-left: 3em;
+			font-size: inherit;
+		}
 	}
-	& > p span {
+	& > span {
 		display: block;
-		color: #8194c2;
-		font-size: 13px;
-		font-weight: 100;
-	}
-	& > p small {
-		display: inline-block;
-		margin: 0;
-		margin-left: 0.5em;
-		font-size: inherit;
-		font-weight: 100;
-	}
+		margin-bottom: 0.5em;
+		font-size: 26px;
+		color: #d16966;
+	} 
 	ul li {
 		position: relative;
 		margin: 0;
 		padding-left: 10em;
 		font-family: 'NanumSquare';
 		font-size: 16px;
-		font-weight: 100;
+		font-weight: 700;
 		line-height: 2;
+		color: #451200;
+
+		span {
+			&:first-of-type {
+				position: absolute;
+				left: 0;
+				display: block;
+			}
+			&:nth-of-type(2) {
+				display: inline-block;
+				width: 115px;
+				font-weight: 300;
+			}
+
+		}
 	}
-	ul li span {
-		position: absolute;
-		left: 0;
-		display: block;
-	}
-	& > p::after {
-		content: '';
-		position: absolute;
-		bottom: -0.5em;
-		left: 105px;
-		display: block;
-		width: 190px;
-		border-bottom: 2px solid #009cff;
-	}
+	
 }
 
 
@@ -354,7 +347,7 @@ section {
 
 .skills {
 	margin-top: 50px;
-	color: #fff;
+	color: #c94945;
 
 	dt {
 		margin-bottom: 1em;
@@ -380,8 +373,8 @@ section {
 								7px 7px 5px rgba(0, 0, 0, 0.6);
 
 		img {
-			height: 45px;
-			max-height: 55px;
+			height: 24px;
+			// max-height: 55px;
 		}
 	}
 }
@@ -419,7 +412,7 @@ section {
 			bottom: 0;
 			left: 370px;
 			width: 50px;
-			border-top: 2px solid #009cff;
+			border-top: 2px solid #fec68d;
 			transform: rotate(-45deg);
 			transform-origin: top right;
 		}
@@ -501,7 +494,7 @@ section {
 				display: block;
 				width: 100%;
 				height: 2vw;
-				background-color: #009cff;
+				background: linear-gradient(to right, #ffdf97, #ffdf97 30%, #ff7b7b, #ff7b7b 90%);
 				// border-top: 2vw solid #009cff;
 				transform: rotate(-45deg);
 			}
@@ -521,7 +514,7 @@ section {
 			left: -100%;
 			&::before {
 				height: 150px;
-				background: linear-gradient(to right, red, #9198e5);
+				
 			}
 		}
 		.line_3 {
