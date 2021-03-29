@@ -64,8 +64,7 @@ section {
   font-size: 22px;
   font-weight: 300;
   letter-spacing: 0.2em;
-  color: #fff;
-  text-shadow: 1px 1px 1px black;
+  color: #656565;
   opacity: 0;
 }
 
@@ -320,7 +319,7 @@ section {
 .career_container ul li span:nth-of-type(2) {
   display: inline-block;
   width: 115px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .skills {
@@ -741,9 +740,9 @@ section {
 }
 
 .last_section .bg_container .line_2 {
-  top: -37%;
+  top: -23%;
   right: auto;
-  left: 60%;
+  left: 74%;
   max-width: 1000px;
 }
 

@@ -65,8 +65,8 @@ section {
 			font-size: 22px;
 			font-weight: 300;
 			letter-spacing: 0.2em;
-			color: #fff;
-			text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+			color: #656565;
+			// text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 			opacity: 0;
 		}
 		
@@ -330,7 +330,7 @@ section {
 			&:nth-of-type(2) {
 				display: inline-block;
 				width: 115px;
-				font-weight: 300;
+				font-weight: 700;
 			}
 
 		}
@@ -797,9 +797,9 @@ section {
 			}
 		}
 		.line_2 {
-			top: -37%;
+			top: -23%;
 			right: auto;
-			left: 60%;
+			left: 74%;
 			max-width: 1000px;
 			&::before {
 				height: 120px;
