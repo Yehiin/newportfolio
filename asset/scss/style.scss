@@ -35,7 +35,7 @@ section {
 	.title_contaienr {
 		position: relative;
 		top: 245px;
-		left: 10%;
+		left: 1%;
 		z-index: 5;
 	}
 	
@@ -43,6 +43,7 @@ section {
 		color: #751614;
 		& > small {
 			display: block;
+			margin-bottom: 0.1em;
 			font-size: 26px;
 			font-weight: 100;
 			letter-spacing: 0.6em;
@@ -59,12 +60,13 @@ section {
 			letter-spacing: 0.1em;
 			text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
 			opacity: 0;
+			text-indent: -0.1em;
 		}
 
 		& + small {
 			display: block;
-			margin-top: 0;
-			font-size: 22px;
+			margin-top: 0.4em;
+			font-size: 21px;
 			font-weight: 300;
 			letter-spacing: 0.2em;
 			// color: #d16966;
@@ -369,7 +371,7 @@ section {
 		justify-content: center;
 		align-items: center;
 		box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.3) inset,
-								7px 7px 5px rgba(0, 0, 0, 0.6);
+								4px 4px 5px rgba(69, 18, 0, 0.4);
 		vertical-align: top;
 	}
 }
@@ -389,6 +391,7 @@ section {
 		margin-bottom: 2em;
 		padding-left: 65px;
 		font-size: 50px;
+		color: #451200;
 
 		// small:first-of-type:empty {
 		// 	display: block;
@@ -426,6 +429,7 @@ section {
 			// margin-top: 1em;
 			font-size: 18px;
 			line-height: 1.6;
+			color: #451200;
 
 			&:nth-of-type(4),
 			&:nth-of-type(2) {
@@ -472,7 +476,7 @@ section {
 			font-size: 13px;
 			font-weight: 100;
 			letter-spacing: 0.4em;
-			color: #656565;
+			color: #858585;
 			transform: rotate(90deg);
 			transform-origin: top right;
 		}
@@ -494,7 +498,7 @@ section {
 	
 		.line_1 {
 			width: 100%;
-			left: -46%;
+			left: -58%;
 			top: -15%;
 			&::before {
 				height: 8px;
@@ -502,11 +506,10 @@ section {
 		}
 		.line_2 {
 			width: 200%;
-			top: 12%;
-			left: -100%;
+			top: -14%;
+			left: -88%;
 			&::before {
 				height: 150px;
-				
 			}
 		}
 		.line_3 {
@@ -516,6 +519,7 @@ section {
 			width: 800px;
 			&::before {
 				height: 10px;
+				background: linear-gradient(to right, #ffdf97, #ffdf97 50%, #ff7b7b, #ff7b7b 90%);
 			}
 		}
 	
@@ -587,7 +591,7 @@ section {
 		&:nth-child(3) .box_title span::after {
 			color: #5929fe;
 		}
-		&:nth-child(3) .project_tit_box a + span {
+		&:nth-child(3) .project_tit_box .title + span {
 			color: #743eda;
 		}
 
@@ -766,10 +770,11 @@ section {
 	max-height: 600px;
 
 	h2 {
-		font-size: 60px;
+		font-size: 40px;
 		font-weight: 700;
 		letter-spacing: 0.3em;
 		margin-right: -1em;
+		color: #451200;
 	}
 
 	.bg_container {
