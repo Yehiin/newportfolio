@@ -112,8 +112,8 @@
 	section04_03_TL
 		.from('.section04 .list_project > li:nth-child(3) h3', {duration: 1, opacity: 0, x: 10})
 		.from('.section04 .list_project > li:nth-child(3) .project_tit_box', {duration: 1, opacity: 0, x: 10}, '-=0.4')
-		.from('.section04 .list_project > li:nth-child(3) .preview_group a', { stagger: 0.2, duration: 1, opacity: 0, y: 10}, 0.5)
 		.from('.section04 .list_project > li:nth-child(3) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
+		.from('.section04 .list_project > li:nth-child(3) .preview_group a, .section04 .list_project > li:nth-child(3) .preview_group .have_item', { stagger: 0.2, duration: 1, opacity: 0, y: 10}, 0.5)
 		;
 
 	// Last Section Animation
