@@ -116,6 +116,21 @@
 		.from('.section04 .list_project > li:nth-child(3) .preview_group a, .section04 .list_project > li:nth-child(3) .preview_group .have_item', { stagger: 0.2, duration: 1, opacity: 0, y: 10}, 0.5)
 		;
 
+	var section04_04_TL = gsap.timeline({
+		scrollTrigger: {
+			// markers: true,
+			trigger: '.section04 .list_project > li:nth-child(4)',
+			start: 'top 60%',
+			toggleActions: 'restart none none reverse',
+		}
+	});
+	section04_04_TL
+		.from('.section04 .list_project > li:nth-child(4) h3', {duration: 1, opacity: 0, x: 10})
+		.from('.section04 .list_project > li:nth-child(4) .project_tit_box', {duration: 1, opacity: 0, x: 10}, '-=0.4')
+		.from('.section04 .list_project > li:nth-child(4) .contribution', {duration: 1, opacity: 0, y: 10}, '-=0.6')
+		.from('.section04 .list_project > li:nth-child(4) .preview_group .have_item', { stagger: 0.2, duration: 1, opacity: 0, y: 10}, 0.5)
+		;
+
 	// Last Section Animation
 	var lastSection_TL = gsap.timeline({
 		scrollTrigger: {

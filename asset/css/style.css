@@ -742,7 +742,7 @@ section {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all .5s ease-in-out;
   top: 5%;
   opacity: 0;
@@ -761,7 +761,7 @@ section {
 }
 
 .preview_group .have_item .inner_menu_box a:hover {
-  color: #d16966;
+  text-decoration: underline;
 }
 
 .preview_group .have_item:hover .inner_menu_box {
