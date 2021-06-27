@@ -563,36 +563,56 @@ section {
 			color: #8194c2;
 		}
 
-		&:nth-child(2) .contribution span,
 		&:nth-child(2) {
 			background-color: #ccc;
-		}
-		&:nth-child(2) .contribution {
-			background: linear-gradient(to bottom, #f70615, #b10000);
-		}
+			.contribution {
+				background: linear-gradient(to bottom, #f70615, #b10000);
+				span {
+					background-color: #ccc;
+				}
+			}
+			.box_title span {
+				&::after {
+					color: #f30614;
+				}
+			}
+			.project_tit_box {
+				a + span {
+					color: #a15358;
+				}
 
-		&:nth-child(2) .box_title span::after {
-			color: #f30614;
-		}
-		&:nth-child(2) .project_tit_box a + span {
-			color: #a15358;
+			}
 		}
 
 		&:nth-child(3) {
-			height: 2800px; // 다른 섹션과 달리 높이값을 지정해 줘야 한다.
-			background: linear-gradient(to right, #2b9abf, #774bf6);
-			&:nth-child(3) .contribution span {
-				background-color: #3c88cb;
+			background-color: #371a86;
+			.contribution {
+				background: linear-gradient(to bottom, #ab82f7, #5026c3);
+				span {
+					background-color: #371a86;
+				}
+			}
+			.box_title span::after {
+				color: #a692e8;
+			}
+			.project_tit_box .title + span {
+				color: #a692e8;
 			}
 		}
-		&:nth-child(3) .contribution {
-			background: linear-gradient(to bottom, #7026f8, #3e1cb4);
-		}
-		&:nth-child(3) .box_title span::after {
-			color: #5929fe;
-		}
-		&:nth-child(3) .project_tit_box .title + span {
-			color: #743eda;
+		&:nth-child(4) {
+			background: linear-gradient(to right, #2b9abf, #774bf6);
+			.contribution {
+				background: linear-gradient(to bottom, #7026f8, #3e1cb4);
+				span {
+					background-color: #3c88cb;
+				}
+			}
+			.box_title span::after {
+				color: #5929fe;
+			}
+			.project_tit_box .title + span {
+				color: #743eda;
+			}
 		}
 
 		.box_title span::after {
@@ -722,9 +742,8 @@ section {
 // 	max-width: 550px;
 // }
 .list_project .preview_group {
-	position: absolute;
-	top: 0;
-	right: -70px;
+	margin-top: -353px;
+	margin-left: 350px;
 	width: 820px;
 }
 .preview_group > a,

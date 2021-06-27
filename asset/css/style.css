@@ -525,12 +525,16 @@ section {
   color: #8194c2;
 }
 
-.list_project li:nth-child(2) .contribution span, .list_project li:nth-child(2) {
+.list_project li:nth-child(2) {
   background-color: #ccc;
 }
 
 .list_project li:nth-child(2) .contribution {
   background: linear-gradient(to bottom, #f70615, #b10000);
+}
+
+.list_project li:nth-child(2) .contribution span {
+  background-color: #ccc;
 }
 
 .list_project li:nth-child(2) .box_title span::after {
@@ -542,23 +546,42 @@ section {
 }
 
 .list_project li:nth-child(3) {
-  height: 2800px;
-  background: linear-gradient(to right, #2b9abf, #774bf6);
-}
-
-.list_project li:nth-child(3):nth-child(3) .contribution span {
-  background-color: #3c88cb;
+  background-color: #371a86;
 }
 
 .list_project li:nth-child(3) .contribution {
-  background: linear-gradient(to bottom, #7026f8, #3e1cb4);
+  background: linear-gradient(to bottom, #ab82f7, #5026c3);
+}
+
+.list_project li:nth-child(3) .contribution span {
+  background-color: #371a86;
 }
 
 .list_project li:nth-child(3) .box_title span::after {
-  color: #5929fe;
+  color: #a692e8;
 }
 
 .list_project li:nth-child(3) .project_tit_box .title + span {
+  color: #a692e8;
+}
+
+.list_project li:nth-child(4) {
+  background: linear-gradient(to right, #2b9abf, #774bf6);
+}
+
+.list_project li:nth-child(4) .contribution {
+  background: linear-gradient(to bottom, #7026f8, #3e1cb4);
+}
+
+.list_project li:nth-child(4) .contribution span {
+  background-color: #3c88cb;
+}
+
+.list_project li:nth-child(4) .box_title span::after {
+  color: #5929fe;
+}
+
+.list_project li:nth-child(4) .project_tit_box .title + span {
   color: #743eda;
 }
 
@@ -666,9 +689,8 @@ section {
 }
 
 .list_project .preview_group {
-  position: absolute;
-  top: 0;
-  right: -70px;
+  margin-top: -353px;
+  margin-left: 350px;
   width: 820px;
 }
 
