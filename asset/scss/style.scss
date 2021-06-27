@@ -778,18 +778,13 @@ section {
 			font-weight: 500;
 			letter-spacing: 0.02em;
 			color: #fff;
-			transition: all .5s linear;
+			transition: all .2s linear;
 			
 			&:nth-child(n+2) {
 				margin-top: 1em;
 			}
 			&:hover {
-				background: -webkit-gradient(linear, right top, left top, color-stop(33%, #c4987a), color-stop(73%, #ffd5bf));
-				background: -webkit-linear-gradient(right, #c4987a 33%, #ffd5bf 73%);
-				background: linear-gradient(to left, #c4987a 33%, #ffd5bf 73%);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
+				color: #d16966;
 			}
 		}
 	}
