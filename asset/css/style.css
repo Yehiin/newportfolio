@@ -666,26 +666,15 @@ section {
   display: block;
 }
 
-.list_project li:nth-child(2) .prview,
-.list_project li:nth-child(1) .prview {
-  right: -50px;
-  width: auto;
-  height: 400px;
-  overflow: hidden;
+.list_project .prview {
+  width: 800px;
+  margin-top: -353px;
+  margin-left: 350px;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.6);
 }
 
-.list_project li:nth-child(2) .prview img,
-.list_project li:nth-child(1) .prview img {
-  height: 100%;
-}
-
-.list_project .prview {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  width: 74%;
-  transform: translateY(-50%);
+.list_project li:nth-child(1) .prview {
+  margin-top: -379px;
 }
 
 .list_project .preview_group {
