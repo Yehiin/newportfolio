@@ -44,11 +44,12 @@ section {
 
 .section01 h1 > small {
   display: block;
+  margin-left: -2px;
   margin-bottom: 0.1em;
   font-size: 20px;
   font-weight: 300;
-  letter-spacing: 0.4em;
-  color: #828282;
+  letter-spacing: 0.3em;
+  color: #b4b4b4;
   line-height: 1.6;
   opacity: 0;
 }
@@ -423,7 +424,7 @@ section {
 }
 
 .section03 .layout_center > p:nth-of-type(4), .section03 .layout_center > p:nth-of-type(2) {
-  left: 37%;
+  left: 38%;
 }
 
 .section03 .layout_center > p:nth-of-type(2) {
@@ -485,8 +486,8 @@ section {
   display: block;
   width: 100%;
   height: 2vw;
-  background: -webkit-gradient(linear, left top, right top, from(#ffdf97), color-stop(30%, #ffdf97), color-stop(#ff7b7b), color-stop(90%, #ff7b7b));
-  background: linear-gradient(to right, #ffdf97, #ffdf97 30%, #ff7b7b, #ff7b7b 90%);
+  background: -webkit-gradient(linear, left top, right top, from(#ffdf97), color-stop(20%, #ffdf97), color-stop(#ff7b7b), color-stop(90%, #ff7b7b));
+  background: linear-gradient(to right, #ffdf97, #ffdf97 20%, #ff7b7b, #ff7b7b 90%);
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -503,12 +504,12 @@ section {
 
 .section03 .bg_container .line_2 {
   width: 200%;
-  top: -14%;
+  top: -13%;
   left: -88%;
 }
 
 .section03 .bg_container .line_2::before {
-  height: 150px;
+  height: 168px;
 }
 
 .section03 .bg_container .line_3 {

@@ -43,11 +43,12 @@ section {
 		color: #751614;
 		& > small {
 			display: block;
+			margin-left: -2px;
 			margin-bottom: 0.1em;
 			font-size: 20px;
 			font-weight: 300;
-			letter-spacing: 0.4em;
-			color: #828282;
+			letter-spacing: 0.3em;
+			color: #b4b4b4;
 			line-height: 1.6;
 			opacity: 0;
 		}
@@ -432,7 +433,7 @@ section {
 
 			&:nth-of-type(4),
 			&:nth-of-type(2) {
-				left: 37%;
+				left: 38%;
 			}
 			&:nth-of-type(2) {
 				position: absolute;
@@ -489,7 +490,7 @@ section {
 				display: block;
 				width: 100%;
 				height: 2vw;
-				background: linear-gradient(to right, #ffdf97, #ffdf97 30%, #ff7b7b, #ff7b7b 90%);
+				background: linear-gradient(to right, #ffdf97, #ffdf97 20%, #ff7b7b, #ff7b7b 90%);
 				// border-top: 2vw solid #009cff;
 				transform: rotate(-45deg);
 			}
@@ -505,10 +506,10 @@ section {
 		}
 		.line_2 {
 			width: 200%;
-			top: -14%;
+			top: -13%;
 			left: -88%;
 			&::before {
-				height: 150px;
+				height: 168px;
 			}
 		}
 		.line_3 {
