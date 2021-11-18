@@ -79,6 +79,7 @@ section {
   left: 40%;
   bottom: 0;
   width: 60vw;
+  min-width: 720px;
   background: url("../img/pc_section01_img01.jpg") left center no-repeat;
   background-size: cover;
   opacity: 0;
@@ -549,7 +550,7 @@ section {
 }
 
 .list_project li:nth-child(2) {
-  background-color: #ccc;
+  background-color: #a5a5a5;
 }
 
 .list_project li:nth-child(2) .contribution {
@@ -558,7 +559,7 @@ section {
 }
 
 .list_project li:nth-child(2) .contribution span {
-  background-color: #ccc;
+  background-color: #a5a5a5;
 }
 
 .list_project li:nth-child(2) .box_title span::after {
